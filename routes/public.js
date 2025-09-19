@@ -7,9 +7,7 @@ const router = express.Router();
 
 // Cadastro
 router.post('/cadastro', async (req, res) => {
-    
     try{
-
         const user = req.body;
         
         const salt = await bcrypt.genSalt(10);
